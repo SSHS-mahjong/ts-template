@@ -1,0 +1,12 @@
+{
+    "type": "module",
+    "scripts": {
+        "dev": "tsup $(find src/ -name '*.ts') --format=esm --watch --onSuccess 'node dist/server.js'",
+        "build": "tsup $(find src/ -name '*.ts') --minify --format=esm",
+        "start": "node dist/server.js"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.2"
+    }
+}
